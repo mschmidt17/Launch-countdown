@@ -1,13 +1,58 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  outline: none;
+}
+body {
+  font-family: 'Red Hat Text', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .3rem;
+  text-align: center;
+  color: hsl(237, 18%, 59%);
+  background-image: url('./img/bg-stars.svg');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 3rem);
+  background-size: contain;
+  padding: 1.5rem;
+}
+.attribution {
+  display: block;
+  position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+  background-size: 100%;
+	height: 4rem;
+	width: 4rem;
+	border-radius:100%;
+	z-index: 99;
+}
+.attribution p {
+  visibility: hidden;
+	position: fixed;
+	bottom: 4.5rem;
+	right: 5rem;
+	width: 12.5rem;
+	padding: .5rem 1rem;
+	border-radius: 1rem 1rem 0;
+	background-color: hsl(235, 16%, 14%);
+	font-size: .6rem;
+  text-align: left;
+  letter-spacing: .2rem;
+	z-index: 999;
+	box-shadow: 0 0 .4rem rgba(0,0,0,.5);
+  transform: rotateX(90deg);
+  transition: .8s cubic-bezier(.06, .8, .1, 1);
+}
+.attribution:hover p {
+  visibility: visible;
+  transform: rotateX(0);
 }

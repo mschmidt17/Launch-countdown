@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+body{
+  background-color: #1e1f29;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 100%);
+  margin-top: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: hsl(237, 18%, 59%);
+  fill: hsl(237, 18%, 59%);
+  transition: 3ms;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.countdown {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 22vh;
 }
 
-.App-link {
-  color: #61dafb;
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+  z-index: 1;
+}
+.social svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hills {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 23vh;
+  background-image: url('./img/pattern-hills.svg');
+  background-size: cover;
+  background-position: top center;
 }
+

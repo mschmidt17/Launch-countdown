@@ -1,0 +1,10 @@
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10rem;
+    cursor: pointer;
+    padding-top: 140px;
+    z-index: 1;
+}
+
