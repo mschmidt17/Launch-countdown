@@ -8,6 +8,13 @@ Se trata de un contador para cuenta regresiva.
 
 <br></br>
 
+Para probarlo:
+1. Descargá el repo
+2. En la consola: 'npm install'
+3. En la consola: 'npm start'
+
+<br></br>
+
 
 
 
